@@ -20,10 +20,12 @@
 <?php
 
 echo "<input type='text' id='seConnecter'><br>";
-echo "<input type='button' id='btnConnecter' value='Se connecter' onclick='LogIn'><br>";
+echo "<input type='button' id='btnConnecter' value='Se connecter' onclick='LogIn()'><br>";
 
 ?>
 
+<div id='divRegion'></div>
+<div id='divVille'></div>
 
 </body>
 </html>
