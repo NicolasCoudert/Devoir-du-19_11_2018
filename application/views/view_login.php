@@ -19,7 +19,8 @@
 
 <?php
 
-echo "<input type='text' id=''>"
+echo "<input type='text' id='seConnecter'><br>";
+echo "<input type='button' id='btnConnecter' value='Se connecter' onclick='LogIn'><br>";
 
 ?>
 

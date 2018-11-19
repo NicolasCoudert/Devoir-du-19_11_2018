@@ -8,10 +8,13 @@ class ctrl_region extends CI_Controller
         $this->load->view('view_login');
     }
 
-    public function Connecter()
+    public function GetAllRegion()
     {
-        $this->load->model("model_login");
-        $data['seConnecter'] = $this->model_login->Connecter($data['seConnecter']);
+        $login = $_GET['LogIn'];
+        $this->load->model("model_region");
+        $data['lesRegions'] = $this->region->Connecter($data['lesRegions']);
+
+        $this->load->view("view_region, $data");
     }
 
 }
